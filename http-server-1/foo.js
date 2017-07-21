@@ -1,5 +1,9 @@
+let out = new Object()
+
 function foo(x) {
     console.log(x)
 }
 
-module.exports = foo
+out.print = foo
+
+module.exports = out

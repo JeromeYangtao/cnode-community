@@ -1,3 +1,3 @@
-let foo = require('./foo')
+let out = require('./foo')
 
-foo("这是自定义模块")
+out.print("这是自定义模块")
