@@ -1,3 +1,5 @@
 const http = require('http')
+const server = http.createServer()
 
-console.log('hello')
+
+server.listen(8000)
