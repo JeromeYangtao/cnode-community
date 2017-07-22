@@ -5,15 +5,11 @@ const url = require('url')
 const querystring = require('querystring')
 
 // 假数据库，尝试增删改查
-let users = [
-    { name: 'Thomson', address: 'shenzhen' },
-    { name: 'test', address: 'guangzhou' }
-]
+let users =[]
 
 // 当server接收到请求的时候触发
 server.on('request', (request, response) => {
-    console.log('有人访问')
-        // 解析后的URL
+    // 解析后的URL
     const parsedUrl = url.parse(request.url)
 
     // 判断是否为user接口
@@ -36,38 +32,66 @@ server.on('request', (request, response) => {
                 response.end(JSON.stringify(user));
             }
 
-            // let query = parsedUrl.query;
-            // console.log(query)
+            let query = parsedUrl.query;
+            console.log(query)
+
             // if (query.address) {
             //     let found = users.filter(u => u.address === query.address);
             //     response.end(JSON.stringify(found));
             // } else {
-            //     response.statusCode = 200;
-            //     response.end(JSON.stringify(users));
+            response.statusCode = 200;
+            response.end(JSON.stringify(users));
             // }
             break
         case 'POST':
-            let user = ''
+            let user = '';
+            // 监听data事件,接受到数据的第一个字节开始响应
             request.on('data', (buffer) => {
-                let userStr = buffer.toString()
-                let CT = request.headers['content-type']
+                // http以buffer的形式传输数据
+                const userStr = buffer.toString();
+
+                // 确保user是Json格式
+                let CT = request.headers['content-type'];
                 if (CT === 'application/json') {
-                    user = JSON.parse(userStr)
-                    users.push(user)
+                    user = JSON.parse(userStr);
+                    users.push(user);
                 }
             })
-            response.on('end', () => {
-                response.statusCode = 201
-                response.end('添加用户成功')
+
+            request.on('end', () => {
+                request.statusCode = 201;
+                response.end('Great! User created!');
             })
-            response.end(`users${user}`)
-            break
+            break;
 
         case 'PATCH':
-            response.end('patch')
+            // 监听data事件,接受到数据的第一个字节开始响应
+            request.on('data', (buffer) => {
+                // http以buffer的形式传输数据
+                const userStr = buffer.toString();
+
+                // 确保user是Json格式
+                let CT = request.headers['content-type'];
+                if (CT === 'application/json') {
+                    let update = JSON.parse(userStr);
+                    let user = users.find(u=>u.name===update.name)
+                    user.address = update.address
+                }
+            })
+
+            request.on('end', () => {
+                request.statusCode = 201;
+                response.end('PATCH');
+            })
             break
         case 'DELETE':
-            response.end('delete')
+            if (parsedUrl.path.indexOf('/user/') > -1) {
+                let username = parsedUrl.path.substring(6, parsedUrl.path.length)
+                let index = users.findIndex(u => u.name === username);
+                users.splice(index,1)
+                response.statusCode = 200;
+                response.end(JSON.stringify(users));
+            }
             break
     }
 })
