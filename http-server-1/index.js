@@ -10,7 +10,8 @@ let users =[]
 // 当server接收到请求的时候触发
 server.on('request', (request, response) => {
     // 解析后的URL
-    const parsedUrl = url.parse(request.url)
+    // true可以让Json格式的parseUrl.query变成string格式
+    const parsedUrl = url.parse(request.url,true)
 
     // 判断是否为user接口
     if (parsedUrl.path.indexOf('/user') === -1) {
@@ -26,22 +27,23 @@ server.on('request', (request, response) => {
             if (parsedUrl.path.indexOf('/user/') > -1) {
                 // /user/之后的内容
                 let username = parsedUrl.path.substring(6, parsedUrl.path.length)
-
                 let user = users.find(u => u.name === username);
                 response.statusCode = 200;
                 response.end(JSON.stringify(user));
             }
 
+            // 查询特定条件的用户
             let query = parsedUrl.query;
             console.log(query)
-
-            // if (query.address) {
-            //     let found = users.filter(u => u.address === query.address);
-            //     response.end(JSON.stringify(found));
-            // } else {
-            response.statusCode = 200;
-            response.end(JSON.stringify(users));
-            // }
+            if (query.address) {
+                // let found = users.filter(u => u.address === query.address);
+                // response.end(JSON.stringify(found));
+                let found = users.filter(u => u.address === query.address);
+                response.end(JSON.stringify(found));
+            } else {
+                response.statusCode = 200;
+                response.end(JSON.stringify(users));
+            }
             break
         case 'POST':
             let user = '';
@@ -51,8 +53,10 @@ server.on('request', (request, response) => {
                 const userStr = buffer.toString();
 
                 // 确保user是Json格式
+                console.log(1)
                 let CT = request.headers['content-type'];
                 if (CT === 'application/json') {
+                    console.log(2)
                     user = JSON.parse(userStr);
                     users.push(user);
                 }
@@ -65,6 +69,7 @@ server.on('request', (request, response) => {
             break;
 
         case 'PATCH':
+            let username = parsedUrl.path.substring(6,parsedUrl.path.length)
             // 监听data事件,接受到数据的第一个字节开始响应
             request.on('data', (buffer) => {
                 // http以buffer的形式传输数据
@@ -74,7 +79,7 @@ server.on('request', (request, response) => {
                 let CT = request.headers['content-type'];
                 if (CT === 'application/json') {
                     let update = JSON.parse(userStr);
-                    let user = users.find(u=>u.name===update.name)
+                    let user = users.find(u=>u.name===username)
                     user.address = update.address
                 }
             })
