@@ -1,8 +1,8 @@
-const http = require('http')
-const server = http.createServer()
-const port = 8000
-const url = require('url')
-const querystring = require('querystring')
+const http = require('http');
+const server = http.createServer();
+const port = 8000;
+const url = require('url');
+const querystring = require('querystring');
 
 // 假数据库，尝试增删改查
 let users = []
