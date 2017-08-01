@@ -8,7 +8,7 @@ const Schema = mongoose.Schema
 mongoose.Promise = global.Promise
 
 const UserSchema = new Schema({
-    name: {type: String, require: true, unique: true, enum: ['laoyang', 'laozhang', '']},
+    name: {type: String, require: true, unique: true},
     age: {type: Number, max: 90, min: [1, 'nobody is younger than 1 years old']}
 })
 
@@ -22,7 +22,7 @@ const UserModel = mongoose.model('user', UserSchema)
 
 !(async () => {
     let user = new UserModel({name: 'wwwww'})
-    await user.save()
+    user.save()
 })()
     .then(r => {
     })
