@@ -1,3 +1,4 @@
+// 和mongo建立连接
 const mongoose = require('mongoose');
 const uri = 'mongodb://localhost/test'
 mongoose.connect(uri, {useMongoClient: true})

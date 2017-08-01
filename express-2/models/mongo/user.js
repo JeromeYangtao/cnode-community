@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb://localhost/test'
-mongoose.connect(uri, {useMongoClient: true})
-const db = mongoose.connection
 const Schema = mongoose.Schema
 
 mongoose.Promise = global.Promise
@@ -11,7 +8,7 @@ const UserSchema = new Schema({
     age: {type: Number, max: [90, 'nobody is older than 90 years old'], min: [1, 'nobody is younger than 1 years old']}
 })
 // UserSchema.index({name: 1}, {unique: true})
-const UserModel = mongoose.model('user', UserSchema)
+let UserModel = mongoose.model('user', UserSchema)
 
 async function createANewUser(params) {
     const user = new UserModel({name: params.name, age: params.age})
@@ -26,7 +23,6 @@ async function createANewUser(params) {
                         throw Error(`error creating user  ${JSON.stringify(params)}`)
                         break
                 }
-
             }
         )
 }
