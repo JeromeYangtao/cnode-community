@@ -1,12 +1,14 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 const User = require('../models/mongo/user')
 const Topic = require('../models/mongo/topic')
 const auth = require('../middlewares/auth_user')
 
 // localhost:3000/topic/
+// 帖子增删改查
 router.route('/')
     .get((req, res, next) => {
+        // 获取帖子列表
         (async () => {
             let topics = await  Topic.getTopics()
             return {
@@ -22,6 +24,7 @@ router.route('/')
             })
     })
     .post(auth(), (req, res, next) => {
+        // 创建帖子
         (async () => {
             let user = await User.getUserById(req.body.userId)
             let topic = await  Topic.createANewTopic({
@@ -43,6 +46,7 @@ router.route('/')
     })
 router.route('/:id')
     .get((req, res, next) => {
+        // 根据id获取帖子
         (async () => {
             let topic = await  Topic.getTopicById(req.params.id)
             return {
@@ -58,6 +62,7 @@ router.route('/:id')
             })
     })
     .patch(auth(), (req, res, next) => {
+        // 根据id修改帖子
         (async () => {
             let update = {}
             if (req.body.title) update.title = req.body.title
@@ -75,9 +80,9 @@ router.route('/:id')
                 next(e)
             })
     })
-
 router.route('/:id/reply')
     .post((req, res, next) => {
+        // 回复帖子
         (async () => {
             let user = await User.getUserById(req.body.userId)
             let topic = await  Topic.replyATopic({

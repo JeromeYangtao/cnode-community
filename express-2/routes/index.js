@@ -3,11 +3,11 @@ const router = express.Router();
 const User = require('../models/mongo/user.js')
 const JWT = require('jsonwebtoken')
 const JWT_SECRET = require('../cipher').JWT_SECRET
-/* GET home page. */
+// 首页
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express'});
+    res.render('index', {title: 'Thomson'});
 });
-
+// 登录
 router.post('/login', (req, res, next) => {
     !(async () => {
         let user = await User.login(req.body.phoneNumber, req.body.password)

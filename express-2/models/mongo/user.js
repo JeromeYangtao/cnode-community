@@ -5,17 +5,19 @@ const bluebird = require('bluebird')
 const pbkdf2Async = bluebird.promisify(crypto.pbkdf2)
 const SALT = require('../../cipher').PASSWORD_SALT
 mongoose.Promise = global.Promise
-
+// 用户表单
 const UserSchema = new Schema({
     name: {type: String, require: true, unique: true},
     age: {type: Number, max: [90, 'nobody is older than 90 years old'], min: [1, 'nobody is younger than 1 years old']},
     phoneNumber: String,
     password: String
 })
+// 建立索引
 UserSchema.index({name: 1}, {unique: true})
 UserSchema.index({name: 1, age: 1})
 // 0表示不显示
 const DEFAULT_PROJECTION = {password: 0, phoneNumber: 0, __v: 0}
+// 用户模型
 let UserModel = mongoose.model('user', UserSchema)
 
 async function createANewUser(params) {

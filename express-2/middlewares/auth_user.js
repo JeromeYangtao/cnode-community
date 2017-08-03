@@ -1,3 +1,4 @@
+// 判断token是否过期，登录状态管理
 const JWT = require('jsonwebtoken')
 const JWT_SECRET = require('../cipher').JWT_SECRET
 module.exports = function (options) {

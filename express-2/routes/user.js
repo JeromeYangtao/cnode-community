@@ -4,9 +4,10 @@ const User = require('../models/mongo/user')
 const auth = require('../middlewares/auth_user')
 
 // localhost:3000/user/
-/* GET users listing. */
+// 用户增删改查
 router.route('/')
     .get((req, res, next) => {
+        // 获取用户列表
         (async () => {
             let users = await  User.getUsers()
             return {
@@ -22,6 +23,7 @@ router.route('/')
             })
     })
     .post((req, res, next) => {
+        // 创建新用户
         (async () => {
             let user = await User.createANewUser({
                 name: req.body.name,
@@ -43,6 +45,7 @@ router.route('/')
     })
 router.route('/:id')
     .get((req, res, next) => {
+        // 通过id获取用户
         (async () => {
             let user = await  User.getUserById(req.params.id)
             return {
@@ -58,6 +61,7 @@ router.route('/:id')
             })
     })
     .patch(auth(), (req, res, next) => {
+            // 通过id修改用户
             (async () => {
                 let update = {}
                 if (req.body.name) update.name = req.body.name

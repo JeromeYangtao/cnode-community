@@ -11,7 +11,7 @@ var topicRouter = require('./routes/topic');
 var mongoose = require('./services/mongoose_service')
 var app = express();
 
-// view engine setup
+// 视图层位置和模板引擎
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+// 路由
 app.use('/', index);
 app.use('/user', user);
 app.use('/topic', topicRouter);
