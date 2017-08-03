@@ -11,7 +11,8 @@ router.get('/', function (req, res, next) {
 router.post('/login', (req, res, next) => {
     !(async () => {
         let user = await User.login(req.body.phoneNumber, req.body.password)
-        let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 20000}, JWT_SECRET)
+        // 加密过的token
+        let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
         return {
             code: 0,
             data: {

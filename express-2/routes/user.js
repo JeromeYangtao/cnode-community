@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/mongo/user')
+const auth = require('../middlewares/auth_user')
 
 // localhost:3000/user/
 /* GET users listing. */
@@ -56,24 +57,25 @@ router.route('/:id')
                 next(e)
             })
     })
-    .patch((req, res, next) => {
-        (async () => {
-            let update = {}
-            if (req.body.name) update.name = req.body.name
-            if (req.body.age) update.age = req.body.age
-            let user = await  User.updateUserById(req.params.id, update)
-            return {
-                code: 0,
-                user: user
-            }
-        })()
-            .then(r => {
-                res.json(r)
-            })
-            .catch(e => {
-                next(e)
-            })
-    })
+    .patch(auth(), (req, res, next) => {
+            (async () => {
+                let update = {}
+                if (req.body.name) update.name = req.body.name
+                if (req.body.age) update.age = req.body.age
+                let user = await  User.updateUserById(req.params.id, update)
+                return {
+                    code: 0,
+                    user: user
+                }
+            })()
+                .then(r => {
+                    res.json(r)
+                })
+                .catch(e => {
+                    next(e)
+                })
+        }
+    )
 
 module.exports = router;
 
