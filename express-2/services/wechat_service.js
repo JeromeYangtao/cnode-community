@@ -6,11 +6,10 @@ const redis = require('../services/redis_service')
 const WECHAT_USER_ACCESS_TOKEN_BY_CODE_PREF = 'wechat_user_access_token_by_code:'
 const WECHAT_USER_REFRESH_TOKEN_BY_CODE_PREF = 'wechat_user_refresh_token_by_code:'
 
+// 用code获取accessToken
 async function getAccessTokenByCode (code) {
   if (!code) throw new Errors.ValidationError('code', 'code can not be empty')
-
   let tokenObj = await getAccessTokenFromCache(code)
-
   if (!tokenObj) {
     const url = `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${APP_ID}&secret=${APP_SECRET}&code=${code}&grant_type=authorization_code`
     tokenObj = await axios.get(url)
@@ -19,7 +18,6 @@ async function getAccessTokenByCode (code) {
         return r.data
       })
   }
-
   await saveUserAccessToken(code, tokenObj)
   if (tokenObj.refresh_token) {
     await saveRefreshToken(code, tokenObj)
@@ -27,6 +25,7 @@ async function getAccessTokenByCode (code) {
   return tokenObj
 }
 
+// 保存refreshToken
 async function saveRefreshToken (code, tokenObj) {
   if (!code) throw new Errors.ValidationError('code', 'code can not be empty')
   if (!tokenObj || !tokenObj.refresh_token) throw new Errors.ValidationError('access_token_obj', 'refresh_token can not be empty')
@@ -34,13 +33,13 @@ async function saveRefreshToken (code, tokenObj) {
     .catch(e => {
       throw Errors.RedisError(`setting wechat user refresh token failed cause: ${e.message}`)
     })
-
   await redis.expire(WECHAT_USER_REFRESH_TOKEN_BY_CODE_PREF + code, 28 * 24 * 60 * 60)
     .catch(e => {
       throw Errors.RedisError(`expiring wechat user refresh token failed cause: ${e.message}`)
     })
 }
 
+// 更新Token
 async function refreshAccessToken (refreshToken) {
   const url = `https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=${APP_ID}&grant_type=refresh_token&refresh_token=${refreshToken}`
   const tokenObj = axios.get(url)
@@ -51,6 +50,7 @@ async function refreshAccessToken (refreshToken) {
   return tokenObj
 }
 
+// 保存用户accessToken
 async function saveUserAccessToken (code, tokenObj) {
   if (!code) throw new Errors.ValidationError('code', 'code can not be empty')
   if (!tokenObj || !tokenObj.access_token) throw new Errors.ValidationError('access_token_obj', 'access_token can not be empty')
@@ -65,6 +65,7 @@ async function saveUserAccessToken (code, tokenObj) {
     })
 }
 
+// 从Redis获取Token
 async function getAccessTokenFromCache (code) {
   let accessToken = await redis.get(WECHAT_USER_ACCESS_TOKEN_BY_CODE_PREF + code)
     .catch(e => {
@@ -94,6 +95,7 @@ async function getAccessTokenFromCache (code) {
   }
 }
 
+// 获取用户信息
 async function getUserInfoByAccessToken (openId, accessToken) {
   const url = `https://api.weixin.qq.com/sns/userinfo?access_token=${accessToken}&openid=${openId}&lang=zh_CN`
   const user = await axios.get(url)
