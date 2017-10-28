@@ -11,6 +11,6 @@ server.on('request', (incomingMsg, res) => {
     anotherRequest.pipe(res)
   })
 
-incomingMsg.pipe(anotherRequest )
+  incomingMsg.pipe(anotherRequest)
   res.end()
 })

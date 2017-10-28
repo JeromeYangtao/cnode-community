@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b5ab5a6-f507-459a-af37-cbaabce15ae4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proxy-4/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/express-2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/README.md" afterPath="$PROJECT_DIR$/express-2/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/app.js" afterPath="$PROJECT_DIR$/express-2/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/bin/www.js" afterPath="$PROJECT_DIR$/express-2/bin/www.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/models/mongo/user.js" afterPath="$PROJECT_DIR$/express-2/models/mongo/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/package-lock.json" afterPath="$PROJECT_DIR$/express-2/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/package.json" afterPath="$PROJECT_DIR$/express-2/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/routes/index.js" afterPath="$PROJECT_DIR$/express-2/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/express-2/services/wechat_service.js" afterPath="$PROJECT_DIR$/express-2/services/wechat_service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proxy-4/app.js" afterPath="$PROJECT_DIR$/proxy-4/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,8 +62,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proxy-4/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="390">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -215,11 +206,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/express-2/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="45" />
-    <option name="y" value="33" />
-    <option name="width" value="1312" />
-    <option name="height" value="780" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -381,7 +371,7 @@
       <workItem from="1501765736920" duration="1850000" />
       <workItem from="1501828575318" duration="8000" />
       <workItem from="1501832823207" duration="19000" />
-      <workItem from="1507997965380" duration="487000" />
+      <workItem from="1507997965380" duration="1605000" />
     </task>
     <task id="LOCAL-00001" summary="generator生成express项目结构">
       <created>1501030411874</created>
@@ -453,11 +443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501732484283</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最简单的网络代理demo">
+      <created>1507998477928</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1507998477928</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80205000" />
+    <option name="totallyTimeSpent" value="81323000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,7 +466,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18322763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -507,7 +504,8 @@
     <MESSAGE value="登录注册接口" />
     <MESSAGE value="鉴权，JWT" />
     <MESSAGE value="梳理一遍项目结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="梳理一遍项目结构" />
+    <MESSAGE value="最简单的网络代理demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="最简单的网络代理demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proxy-4/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="390">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding />
         </state>
       </provider>
