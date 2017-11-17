@@ -23,6 +23,7 @@
     "winston-daily-rotate-file": "^1.7.2"
   },
   "devDependencies": {
+    "heapdump": "^0.3.9",
     "v8-profiler": "^5.7.0"
   }
 }

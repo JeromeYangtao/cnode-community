@@ -5,9 +5,14 @@ const JWT = require('jsonwebtoken')
 const JWT_SECRET = require('../cipher').JWT_SECRET
 const Errors = require('../errors')
 const WechatService = require('../services/wechat_service')
+
+const heapDump = require('heapdump')
 // 首页
 router.get('/', function (req, res, next) {
   res.render('index', {title: 'Thomson'})
+  console.log(Date.now().valueOf())
+  let filename = `./profile/${Date.now}.heapsnapshot`
+  heapDump.writeSnapshot(filename)
 })
 // 登录
 router.post('/login', (req, res, next) => {
