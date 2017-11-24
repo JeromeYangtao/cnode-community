@@ -3,7 +3,7 @@ let debug = require('debug')('express-2:server')
 let http = require('http')
 
 // 设置端口
-let port = normalizePort(process.env.PORT || '3001')
+let port = normalizePort(process.env.PORT || '3000')
 app.set('port', port)
 // 创建服务器
 let server = http.createServer(app)

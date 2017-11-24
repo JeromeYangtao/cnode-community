@@ -6,15 +6,21 @@ const JWT_SECRET = require('../cipher').JWT_SECRET
 const Errors = require('../errors')
 const WechatService = require('../services/wechat_service')
 
-const heapDump = require('heapdump')
 // 首页
 router.get('/', function (req, res, next) {
   res.render('index', {title: 'Thomson'})
   console.log(Date.now().valueOf())
-  let filename = `./profile/${Date.now}.heapsnapshot`
-  heapDump.writeSnapshot(filename)
 })
 // 登录
+
+/**
+ *
+ * @api POST /login 登录
+ * @apiDescription 社区账号密码登录
+ * @apiParam {String=110} phoneNumber 手机号
+ * @apiParam {Integer} password 密码
+ *
+ */
 router.post('/login', (req, res, next) => {
   !(async () => {
     if (!req.body.password) throw new Errors.ValidationError('password', 'password can not be empty')
