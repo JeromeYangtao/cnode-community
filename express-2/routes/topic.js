@@ -23,26 +23,19 @@ router.route('/')
         next(e)
       })
   })
-  .post(auth(), (req, res, next) => {
+  .post(auth(), async (req, res, next) => {
     // 创建帖子
-    (async () => {
-      let user = await User.getUserById(req.body.userId)
-      let topic = await  Topic.createANewTopic({
-        creator: user,
-        title: req.body.title,
-        content: req.body.content
-      })
-      return {
-        code: 0,
-        topics: topic
-      }
-    })()
-      .then(r => {
-        res.json(r)
-      })
-      .catch(e => {
-        next(e)
-      })
+    let user = await User.getUserById(req.body.userId)
+    console.log(user)
+    let topic = await Topic.createANewTopic({
+      creator: user,
+      title: req.body.title,
+      content: req.body.content
+    })
+    return {
+      code: 0,
+      topics: topic
+    }
   })
 router.route('/:id')
   .get((req, res, next) => {

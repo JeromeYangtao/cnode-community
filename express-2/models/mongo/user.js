@@ -109,7 +109,7 @@ async function login (phoneNumber, password) {
       console.log(`error logging in:phone ${phoneNumber}`)
       throw new Error('something wrong with the server')
     })
-  if (!user) throw new Error('no such user')
+  if (!user) throw new Error('没找到用户')
   return user
 }
 
@@ -122,11 +122,22 @@ async function loginWithWechat (user) {
   return created
 }
 
+// 增加积分
+async function incrPoints (userId, points) {
+  const user = await UserModel.findOneAndUpdate({_id: userId}, {$inc: {points: points}}, {
+    new: true,
+    fields: {points: 1}
+  })
+  return user.points
+}
+
 module.exports = {
   model: UserModel,
   createANewUser,
   getUsers,
   getUserById,
   updateUserById,
-  login
+  login,
+  loginWithWechat,
+  incrPoints
 }

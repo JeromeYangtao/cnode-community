@@ -9,10 +9,8 @@ const WechatService = require('../services/wechat_service')
 // 首页
 router.get('/', function (req, res, next) {
   res.render('index', {title: 'Thomson'})
-  console.log(Date.now().valueOf())
 })
 // 登录
-
 /**
  *
  * @api POST /login 登录
@@ -23,14 +21,15 @@ router.get('/', function (req, res, next) {
  */
 router.post('/login', (req, res, next) => {
   !(async () => {
-    if (!req.body.password) throw new Errors.ValidationError('password', 'password can not be empty')
-    if (typeof req.body.password !== 'string') throw new Errors.ValidationError('password', 'password must be a string')
+    if (!req.body.password) throw new Errors.ValidationError('password', '密码不能为空')
+    if (typeof req.body.password !== 'string') throw new Errors.ValidationError('password', '密码必须是string')
     if (req.body.password.length < 8) throw new Errors.ValidationError('password', 'password must longer than 8 characters')
     if (req.body.password.length > 32) throw new Errors.ValidationError('password', 'password can not be longer than 32 characters')
 
     let user = await User.login(req.body.phoneNumber, req.body.password)
     // 加密过的token
     let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
+    console.log(user)
     return {
       code: 0,
       data: {
