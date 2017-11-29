@@ -1,0 +1,202 @@
+swagger: '2.0'
+info:
+  description: Node.js 社区接口文档
+  version: 1.0.0
+  title: 接口文档
+host: 'localhost:3000'
+basePath: /v2
+tags:
+  - name: user
+    description: 用户 相关操作
+schemes:
+  - http
+paths:
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: 登录
+      description: ''
+      operationId: loginUser
+      produces:
+        - application/xml
+        - application/json
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: true
+          type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            type: string
+          headers:
+            X-Rate-Limit:
+              type: integer
+              format: int32
+              description: calls per hour allowed by the user
+            X-Expires-After:
+              type: string
+              format: date-time
+              description: date in UTC when token expires
+        '400':
+          description: Invalid username/password supplied
+  /user:
+    get:
+      tags:
+        - user
+      summary: 获取用户列表
+      description: 获取所有用户
+      operationId: getUsers
+      produces:
+        - application/json
+      responses:
+        default:
+          description: success
+    post:
+      tags:
+        - user
+      summary: 创建新用户
+      description: 通过电话号码和密码创建新用户
+      operationId: createUser
+      parameters:
+        - name: person
+          in: body
+          description: 要创建的用户的信息.
+          schema:
+            required:
+              - phoneNumber
+              - password
+            properties:
+              name:
+                type: string
+              age:
+                type: integer
+              phoneNumber:
+                type: string
+              password:
+                type: string
+      produces:
+        - application/json
+      responses:
+        default:
+          description: successful
+  /user/{id}:
+    get:
+      tags:
+        - user
+      summary: 通过用户id获取用户信息
+      description: ''
+      operationId: getUserById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: 用户id
+          required: true
+          type: integer
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/User'
+        400:
+          description: Invalid id supplied
+        404:
+          description: User not found
+    put:
+      tags:
+        - user
+      summary: 更新用户信息通过用户名
+      description: 更新用户信息通过用户名
+      operationId: updateUser
+      produces:
+        - application/xml
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: name that need to be updated
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Updated user object
+          required: true
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        '400':
+          description: Invalid user supplied
+        '404':
+          description: User not found
+    delete:
+      tags:
+        - user
+      summary: 删除用户通过用户名
+      description: 删除用户通过用户名
+      operationId: deleteUser
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          type: string
+      responses:
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: 'http://petstore.swagger.io/oauth/dialog'
+    flow: implicit
+    scopes:
+      'write:pets': modify pets in your account
+      'read:pets': read your pets
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
+definitions:
+  User:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+      age:
+        type: integer
+        format: int64
+      phoneNumber:
+        type: string
+      password:
+        type: string
+    xml:
+      name: User
+  ApiResponse:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      type:
+        type: string
+      message:
+        type: string
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
