@@ -1,11 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/mongon-3/test.js" line="32" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="0b5ab5a6-f507-459a-af37-cbaabce15ae4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/routes/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/views/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/views/article.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2.1/views/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/dictionaries/Thomson.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/express-2.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/runConfigurations/bin_www.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/apidoc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/bin/www.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/cipher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/dump.rdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/errors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/middlewares/auth_user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/middlewares/req_log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/mocks/topic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/mocks/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/models/in_memo/topic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/models/in_memo/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/models/mongo/topic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/models/mongo/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/profile/before.heapsnapshot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/profile/function now() { [native code] }.heapsnapshot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/api_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/api_data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/api_project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/api_project.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/pt_br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/zh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/locales/zh_cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/utils/handlebars_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/utils/send_sample_request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/diff_match_patch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/handlebars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/lodash.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/path-to-regexp/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/path-to-regexp/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-Splus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-aea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-agc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-apollo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-cbm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-cl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-clj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-dart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-erl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-fs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-go.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-hs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lasso.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lassoscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-latex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lgt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lisp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-ll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-llvm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-logtalk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-ls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lsp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-lua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-matlab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-mumps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-nemerle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-proto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-r.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-rd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-rkt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-rust.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-s.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-scala.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-scm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-sql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-swift.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-tex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-vb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-vbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-vhd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-vhdl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-wiki.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-xq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-xquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/lang-yml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/prettify/run_prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/require.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/semver.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/docs/js/vendor/webfontloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/stylesheets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/favicon-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/oauth2-redirect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui-bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui-bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui-standalone-preset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui-standalone-preset.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger-ui.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/swagger/swagger.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/2510507fbd24e2813c0030550a75061e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/65b8ba69fd7977720118a9ccacf875d9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/713f91d228bdc8f98a0bd745ab5a9403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/7d263d93640b92fbb5c89043f65ad929" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/9e21a2a35e621040c0085d2bb25b2369" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/d0a85c9933e9ff9f2e4d8e232bfe6664" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/d40578984b96a49309503cf843801788" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/public/upload/ef34872b9d77ffbf5b7c4fca27f6026b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/routes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/routes/topic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/routes/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/services/like_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/services/mongoose_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/services/redis_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/services/wechat_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/tests/models/like_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/utils/logger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/views/error.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/views/index.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/express-2/views/layout.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/dictionaries/Thomson.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/http-server-1.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/foo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/http-server-1/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mongon-3/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proxy-4/app.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,101 +218,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2/routes/topic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxy-4/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2/views/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2.1/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2.1/views/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2.1/views/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/express-2.1/views/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="461">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -204,7 +304,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/express-2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -234,7 +334,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,7 +346,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,6 +368,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="SearchEverywhereHistoryKey" value="live&#9;ACTION&#9;InsertLiveTemplate&#10;template&#9;ACTION&#9;NewFromTemplate&#10;templa&#9;null&#9;null" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -314,7 +415,8 @@
         </option>
       </EXTENSION>
     </configuration>
-    <configuration name="www.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/express-2/bin/www.js" working-dir="$PROJECT_DIR$">
+    <configuration name="www.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/Cellar/node/8.9.1/bin/node" path-to-js-file="express-2/bin/www.js" working-dir="$PROJECT_DIR$">
+      <profiling v8-profiler-path="$PROJECT_DIR$/node_modules/v8-profiler" />
       <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
         <option name="envVars">
           <list />
@@ -335,6 +437,9 @@
         <option name="volumeBindings">
           <list />
         </option>
+      </EXTENSION>
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+        <profiling v8-profiler-path="$PROJECT_DIR$/node_modules/v8-profiler" />
       </EXTENSION>
     </configuration>
     <recent_temporary>
@@ -368,6 +473,7 @@
       <workItem from="1501832823207" duration="19000" />
       <workItem from="1507997965380" duration="1605000" />
       <workItem from="1509205095355" duration="792000" />
+      <workItem from="1511943101594" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="generator生成express项目结构">
       <created>1501030411874</created>
@@ -450,7 +556,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82115000" />
+    <option name="totallyTimeSpent" value="82504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,7 +568,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18322763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -857,15 +963,15 @@
     <entry file="file://$PROJECT_DIR$/proxy-4/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        <state relative-caret-position="461">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
