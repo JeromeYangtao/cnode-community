@@ -7,10 +7,13 @@
 ```
 
 ### 使用项目
+后端部分：
 ```
 1.克隆项目：      git clone https://github.com/JeromeYangtao/cnode-community
 2.安装nodejs
 3.安装依赖：      npm install
+4.启动MongoDB
+5.启动Redis
 4.启动服务：      npm start
 ```
 
@@ -55,6 +58,37 @@
 
 .
 ```
+### 用到的接口
+```js
+    /**
+    * 以下 api 路径均以 https://cnodejs.org/api/v1 为前缀
+    */
+
+    /**
+     * 用户登陆
+     * 验证 accessToken 的正确性
+     *  post /accesstoken 
+     *
+     * 用户详情
+     * get /user/:loginname 
+     * 
+     * 获取已读和未读消息
+     * get /messages 
+    */
+  
+    /**
+     * 主题首页 
+     * get /topics 
+     * 
+     * 主题详情
+     * get /topic/:id 
+     *
+     * 新建主题
+     * post /topics 
+     *
+     */
+```
+
 
 ### 预览
 
