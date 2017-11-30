@@ -15,16 +15,15 @@ const logger = require('./utils/logger').logger
 
 const app = express()
 
-// 视图层位置和模板引擎
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'hbs')
+// 视图层位置
+app.set('views', path.join(__dirname, 'views/dist'))
 
 // uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())
-app.use(express.static(path.join(__dirname, 'public'))) //静态资源位置
+app.use(express.static(path.join(__dirname, 'views/dist'))) //静态资源位置
 app.use(require('./middlewares/req_log').logRequests()) //请求日志
 // 路由
 app.use('/', index)

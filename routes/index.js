@@ -5,11 +5,16 @@ const JWT = require('jsonwebtoken')
 const JWT_SECRET = require('../cipher').JWT_SECRET
 const Errors = require('../errors')
 const WechatService = require('../services/wechat_service')
+const fs = require('fs')
+const path = require('path')
 
 // 首页
 router.get('/', function (req, res, next) {
-  res.render('index', {title: 'Thomson'})
+  let htmlPath = path.resolve(process.cwd(), 'views/dist/index.html')
+  let body = fs.readFileSync(htmlPath)
+  res.end(body)
 })
+
 // 登录
 /**
  *
