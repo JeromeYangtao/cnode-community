@@ -23,7 +23,13 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(cookieParser())
-app.use(express.static(path.join(__dirname, 'views/dist'))) //静态资源位置
+
+// if (true) {
+app.use(express.static(path.join(__dirname, 'views/site/dist'))) //静态资源位置
+// } else {
+//   app.use(express.static(path.join(__dirname, 'views/site/dist'))) //静态资源位置
+// }
+
 app.use(require('./middlewares/req_log').logRequests()) //请求日志
 // 路由
 app.use('/', index)

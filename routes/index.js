@@ -10,7 +10,14 @@ const path = require('path')
 
 // 首页
 router.get('/', function (req, res, next) {
-  let htmlPath = path.resolve(process.cwd(), 'views/dist/index.html')
+  let htmlPath = path.resolve(process.cwd(), 'views/site/dist/index.html')
+  let body = fs.readFileSync(htmlPath)
+  res.end(body)
+})
+
+//管理后台页面
+router.get('/management', function (req, res, next) {
+  let htmlPath = path.resolve(process.cwd(), 'views/management/dist/index.html')
   let body = fs.readFileSync(htmlPath)
   res.end(body)
 })
