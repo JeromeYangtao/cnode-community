@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "element-ui": "^2.0.7",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
