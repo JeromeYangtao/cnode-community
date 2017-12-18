@@ -31,31 +31,23 @@ router.get('/management', function (req, res, next) {
  * @apiParam {Integer} password 密码
  *
  */
-router.post('/login', (req, res, next) => {
-  !(async () => {
-    if (!req.body.password) throw new Errors.ValidationError('password', '密码不能为空')
-    if (typeof req.body.password !== 'string') throw new Errors.ValidationError('password', '密码必须是string')
-    if (req.body.password.length < 8) throw new Errors.ValidationError('password', 'password must longer than 8 characters')
-    if (req.body.password.length > 32) throw new Errors.ValidationError('password', 'password can not be longer than 32 characters')
+router.post('/login', async (req, res, next) => {
+  if (!req.body.password) throw new Errors.ValidationError('password', '密码不能为空')
+  if (typeof req.body.password !== 'string') throw new Errors.ValidationError('password', '密码必须是string')
+  if (req.body.password.length < 8) throw new Errors.ValidationError('password', 'password must longer than 8 characters')
+  if (req.body.password.length > 32) throw new Errors.ValidationError('password', 'password can not be longer than 32 characters')
 
-    let user = await User.login(req.body.phoneNumber, req.body.password)
-    // 加密过的token
-    let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
-    console.log(user)
-    return {
-      code: 0,
-      data: {
-        user: user,
-        token: token
-      }
+  let user = await User.login(req.body.phoneNumber, req.body.password)
+  // 加密过的token
+  let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
+  res.json({
+    code: 0,
+    data: {
+      user: user,
+      token: token
     }
-  })()
-    .then(r => {
-      res.json(r)
-    })
-    .catch(e => {
-      next(e)
-    })
+  })
+
 })
 // 微信登录
 router.post('/wechat/login', (req, res, next) => {
@@ -64,7 +56,6 @@ router.post('/wechat/login', (req, res, next) => {
     const user = await WechatService.getUserInfoByCode(code)
     const foundOrCreated = await User.loginWithWechat(user)
     const token = JWT.sign({_id: user._id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
-
     return {
       code: 0,
       data: {
