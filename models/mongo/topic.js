@@ -21,15 +21,21 @@ async function createANewTopic (params) {
     })
 }
 
-async function getTopics (params = {page: 0, pageSize: 10}) {
-  let flow = TopicModel.find({})
-  flow.skip(params.page * params.pageSize)
-  flow.limit(params.pageSize)
-  return await flow
-    .catch(e => {
-      console.log(e)
-      throw new Error('error getting users from db')
-    })
+
+async function getTopics (params = {page: 0, tab: 'all', limit: 10}) {
+  if (params.tab === 'all') {
+    let flow = TopicModel.find({})
+    flow.skip(params.page * params.limit)
+    flow.limit(params.limit)
+    return await flow
+      .catch(e => {
+        console.log(e)
+        throw new Error('从db获取数据失败')
+      })
+  } else {
+    throw new Error('目前只有all类型的topics')
+    return undefined
+  }
 }
 
 async function getTopicById (topicId) {

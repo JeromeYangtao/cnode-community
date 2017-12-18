@@ -4,13 +4,20 @@ const User = require('../models/mongo/user')
 const Topic = require('../models/mongo/topic')
 const auth = require('../middlewares/auth_user')
 
-// localhost:3000/topic/
+// localhost:3000/topics/
 // 帖子增删改查
 router.route('/')
-// 获取帖子列表
+/**
+ *
+ * @api get /topics 主题首页
+ * @apiDescription 获取首页的topics列表
+ * @apiParam {Number=0} page 页数
+ * @apiParam {String=all} tab topics分类 目前有all
+ * @apiParam {Number=10} limit  每一页的topics数量
+ *
+ */
   .get(async (req, res, next) => {
-    let topics = await
-      Topic.getTopics()
+    let topics = await Topic.getTopics()
     res.json({
       code: 0,
       topics: topics

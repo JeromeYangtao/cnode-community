@@ -34,7 +34,7 @@ app.use(require('./middlewares/req_log').logRequests()) //请求日志
 // 路由
 app.use('/', index)
 app.use('/user', user)
-app.use('/topic', topicRouter)
+app.use('/topics', topicRouter)
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   const err = new Error('Not Found')

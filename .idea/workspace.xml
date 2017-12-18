@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b5ab5a6-f507-459a-af37-cbaabce15ae4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/models/mongo/user.js" afterPath="$PROJECT_DIR$/models/mongo/user.js" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
+      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change beforePath="$PROJECT_DIR$/models/mongo/topic.js" afterPath="$PROJECT_DIR$/models/mongo/topic.js" />
+      <change beforePath="$PROJECT_DIR$/routes/topic.js" afterPath="$PROJECT_DIR$/routes/topic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,15 +28,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <file leaf-file-name="topic.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/topic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="52">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
-                <element signature="e#503#603#0" expanded="false" />
-                <element signature="e#650#886#0" expanded="false" />
-                <element signature="e#1152#1473#0" expanded="false" />
+                <element signature="e#649#901#0" expanded="false" />
+                <element signature="e#970#1088#0" expanded="false" />
+                <element signature="e#1147#1411#0" expanded="false" />
+                <element signature="e#1483#1733#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,8 +46,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="331">
+              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="e#401#534#0" expanded="false" />
                 <element signature="e#598#737#0" expanded="false" />
@@ -58,59 +59,30 @@
         </entry>
       </file>
       <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/topic.js">
+        <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="151">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#305#415#0" expanded="false" />
-                <element signature="e#469#721#0" expanded="false" />
-                <element signature="e#790#908#0" expanded="false" />
-                <element signature="e#967#1231#0" expanded="false" />
-                <element signature="e#1303#1553#0" expanded="false" />
+                <element signature="e#135#306#0" expanded="false" />
+                <element signature="n#!!block;n#createANewTopic#0" expanded="false" />
+                <element signature="n#!!block;n#getTopics#0" expanded="false" />
+                <element signature="n#!!block;n#replyATopic#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="546">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding>
-                <element signature="n#!!block;n#createANewUser#0" expanded="false" />
-                <element signature="n#!!block;n#getUsers#0" expanded="false" />
-                <element signature="n#!!block;n#updateUserById#0" expanded="false" />
-                <element signature="n#!!block;n#login#0" expanded="false" />
-                <element signature="n#!!block;n#loginWithWechat#0" expanded="false" />
-                <element signature="n#!!block;n#incrPoints#0" expanded="false" />
+                <element signature="e#503#603#0" expanded="false" />
+                <element signature="e#650#886#0" expanded="false" />
+                <element signature="e#1152#1473#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/src/fetch/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-845">
-              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="73">
-                <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
             </state>
           </provider>
         </entry>
@@ -130,6 +102,7 @@
       <find>user</find>
       <find>secret</find>
       <find>hin</find>
+      <find>pageSize</find>
     </findStrings>
     <replaceStrings>
       <replace>topic</replace>
@@ -173,18 +146,19 @@
         <option value="$PROJECT_DIR$/express-2/views/index.hbs" />
         <option value="$PROJECT_DIR$/proxy-4/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/management/src/components/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/views/management/src/router/index.js" />
         <option value="$PROJECT_DIR$/views/management/src/App.vue" />
         <option value="$PROJECT_DIR$/views/management/.babelrc" />
         <option value="$PROJECT_DIR$/views/management/src/main.js" />
         <option value="$PROJECT_DIR$/views/management/src/components/Index.vue" />
-        <option value="$PROJECT_DIR$/routes/topic.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/models/mongo/user.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/models/mongo/topic.js" />
+        <option value="$PROJECT_DIR$/routes/topic.js" />
       </list>
     </option>
   </component>
@@ -278,32 +252,6 @@
               <item name="cnode-community" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cnode-community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cnode-community" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cnode-community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cnode-community" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cnode-community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cnode-community" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cnode-community" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cnode-community" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fetch" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -333,13 +281,13 @@
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/site" />
-      <recent name="C:\Users\Thomson\Desktop\node-learning\express-2\models\in_memo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Thomson\Desktop\node-learning\express-2\models\mongo" />
       <recent name="C:\Users\Thomson\Desktop\node-learning\express-2\models\memo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/site" />
+      <recent name="C:\Users\Thomson\Desktop\node-learning\express-2\models\in_memo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -421,7 +369,7 @@
       <workItem from="1513333821721" duration="1145000" />
       <workItem from="1513434106066" duration="500000" />
       <workItem from="1513435954117" duration="467000" />
-      <workItem from="1513583349130" duration="5260000" />
+      <workItem from="1513583349130" duration="7248000" />
     </task>
     <task id="LOCAL-00001" summary="generator生成express项目结构">
       <created>1501030411874</created>
@@ -528,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513586904026</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="新增通过name获取用户信息接口">
+      <created>1513588837752</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1513588837752</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120875000" />
+    <option name="totallyTimeSpent" value="122863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +565,8 @@
     <MESSAGE value="update README" />
     <MESSAGE value="增加后台管理页面" />
     <MESSAGE value="修改async使用方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改async使用方式" />
+    <MESSAGE value="新增通过name获取用户信息接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增通过name获取用户信息接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,9 +575,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.1.4/core-modules/querystring.js" />
-    <entry file="file://$PROJECT_DIR$/express-2/package-lock.json" />
-    <entry file="file://$PROJECT_DIR$/http-server-1/index.js" />
     <entry file="file://$PROJECT_DIR$/http-server-1/foo.js" />
     <entry file="file://$PROJECT_DIR$/http-server-1/bar.js" />
     <entry file="file://$PROJECT_DIR$/express-2.1/package.json" />
@@ -730,52 +683,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/topic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#305#415#0" expanded="false" />
-            <element signature="e#469#721#0" expanded="false" />
-            <element signature="e#790#908#0" expanded="false" />
-            <element signature="e#967#1231#0" expanded="false" />
-            <element signature="e#1303#1553#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="e#401#534#0" expanded="false" />
-            <element signature="e#598#737#0" expanded="false" />
-            <element signature="e#936#1663#0" expanded="false" />
-            <element signature="e#1722#2234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/in_memo/topic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -798,8 +708,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="73">
-            <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <first_editor relative-caret-position="335">
+            <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor>
@@ -808,9 +718,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/src/router/routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2086">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/src/vuex/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/src/vuex/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="145" column="11" lean-forward="true" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#createANewUser#0" expanded="false" />
+            <element signature="n#!!block;n#getUsers#0" expanded="false" />
+            <element signature="n#!!block;n#getUserById#1" expanded="false" />
+            <element signature="n#!!block;n#updateUserById#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#loginWithWechat#0" expanded="false" />
+            <element signature="n#!!block;n#incrPoints#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="546">
           <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
             <element signature="e#503#603#0" expanded="false" />
@@ -820,17 +782,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="331">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
-            <element signature="n#!!block;n#createANewUser#0" expanded="false" />
-            <element signature="n#!!block;n#getUsers#0" expanded="false" />
-            <element signature="n#!!block;n#updateUserById#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="n#!!block;n#loginWithWechat#0" expanded="false" />
-            <element signature="n#!!block;n#incrPoints#0" expanded="false" />
+            <element signature="e#401#534#0" expanded="false" />
+            <element signature="e#598#737#0" expanded="false" />
+            <element signature="e#936#1663#0" expanded="false" />
+            <element signature="e#1722#2234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#135#306#0" expanded="false" />
+            <element signature="n#!!block;n#createANewTopic#0" expanded="false" />
+            <element signature="n#!!block;n#getTopics#0" expanded="false" />
+            <element signature="n#!!block;n#replyATopic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#649#901#0" expanded="false" />
+            <element signature="e#970#1088#0" expanded="false" />
+            <element signature="e#1147#1411#0" expanded="false" />
+            <element signature="e#1483#1733#0" expanded="false" />
           </folding>
         </state>
       </provider>
