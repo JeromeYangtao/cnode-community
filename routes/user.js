@@ -56,7 +56,14 @@ router.route('/:id')
     }
   )
 
-// router.round('/')
+router.route('/:name')
+  .get(async (req, res, next) => {
+    let user = await  User.getUserByName(req.params.id)
+    res.json({
+      code: 0,
+      user: user
+    })
+  })
 
 module.exports = router
 

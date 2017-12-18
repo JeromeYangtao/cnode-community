@@ -70,7 +70,7 @@
      *  post /accesstoken 
      *
      * 用户详情
-     * get /user/:loginname 
+     * get /user/:name
      * 
      * 获取已读和未读消息
      * get /messages 

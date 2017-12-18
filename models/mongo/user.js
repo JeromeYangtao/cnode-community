@@ -75,13 +75,22 @@ async function getUsers (params = {page: 0, pageSize: 10}) {
     })
 }
 
-// 获取单个用户
+// id获取单个用户
 async function getUserById (userId) {
   return UserModel.findOne({_id: userId})
     .select(DEFAULT_PROJECTION)
     .catch(e => {
       console.log(e)
       throw Error(`error getting user by id: ${userId}`)
+    })
+}
+// name获取单个用户
+async function getUserById (name) {
+  return UserModel.findOne({name: name})
+    .select(DEFAULT_PROJECTION)
+    .catch(e => {
+      console.log(e)
+      throw Error(`error getting user by id: ${name}`)
     })
 }
 
