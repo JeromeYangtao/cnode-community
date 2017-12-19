@@ -25,8 +25,18 @@ router.get('/management', function (req, res, next) {
 // 登录
 /**
  *
+ * @api post /accesstoken
+ * @apiDescription accesstoken登录
+ *
+ */
+router.post('/accesstoken', async (req, res, next) => {
+  let user = await  User.loginWithAccesstoken(req.params)
+})
+
+/**
+ *
  * @api POST /login 登录
- * @apiDescription 社区账号密码登录
+ * @apiDescription 手机,密码登录
  * @apiParam {String=110} phoneNumber 手机号
  * @apiParam {Integer} password 密码
  *
@@ -47,8 +57,8 @@ router.post('/login', async (req, res, next) => {
       token: token
     }
   })
-
 })
+
 // 微信登录
 router.post('/wechat/login', (req, res, next) => {
   (async () => {

@@ -64,11 +64,7 @@
     * 以下 api 路径均以 http://yangtao.biz/api/v1 为前缀
     */
 
-    /**
-     * 用户登陆
-     * 验证 accessToken 的正确性
-     *  post /accesstoken 
-    */
+
 
     /**
     *

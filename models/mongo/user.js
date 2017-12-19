@@ -105,6 +105,10 @@ async function updateUserById (userId, update) {
     )
 }
 
+async function loginWithAccesstoken (accesstoken) {
+
+}
+
 // 电话，密码登录
 async function login (phoneNumber, password) {
   password = await pbkdf2Async(password, SALT, 512, 128, 'sha1')
@@ -149,6 +153,7 @@ module.exports = {
   updateUserById,
   getUserByLoginName,
   login,
+  loginWithAccesstoken,
   loginWithWechat,
   incrPoints
 }

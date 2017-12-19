@@ -33,6 +33,7 @@ router.route('/')
     })
   })
 
+
 // router.route('/:id')
 // // 通过id获取用户
 //   .get(async (req, res, next) => {
@@ -56,6 +57,7 @@ router.route('/')
 //       })
 //     }
 //   )
+
 /**
  *
  * 用户详情

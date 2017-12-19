@@ -17,7 +17,11 @@ router.route('/')
  *
  */
   .get(async (req, res, next) => {
-    let topics = await Topic.getTopics()
+    let topics = await Topic.getTopics({
+      page: req.query.page,
+      tab: req.query.tab,
+      limit: req.query.limit
+    })
     res.json({
       code: 0,
       topics: topics
