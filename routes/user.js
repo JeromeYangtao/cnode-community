@@ -33,32 +33,40 @@ router.route('/')
     })
   })
 
-router.route('/:id')
-// 通过id获取用户
-  .get(async (req, res, next) => {
-    let user = await  User.getUserById(req.params.id)
-    res.json({
-      code: 0,
-      user: user
-    })
-  })
-  // 通过id修改用户
-  .patch(auth(), upload.single('avatar'), async (req, res, next) => {
-      let update = {}
-      if (req.body.loginName) update.loginName = req.body.loginName
-      if (req.body.age) update.age = req.body.age
-      update.avatar = `${HOST}/upload/${req.file.filename}`
-      let user = await  User.updateUserById(req.params.id, update)
-      res.json({
-        code: 0,
-        user: user
-      })
-    }
-  )
-
+// router.route('/:id')
+// // 通过id获取用户
+//   .get(async (req, res, next) => {
+//     let user = await  User.getUserById(req.params.id)
+//     res.json({
+//       code: 0,
+//       user: user
+//     })
+//   })
+//   // 通过id修改用户
+//   // auth(), upload.single('avatar'),
+//   .patch(async (req, res, next) => {
+//       let update = {}
+//       if (req.body.loginName) update.loginName = req.body.loginName
+//       if (req.body.age) update.age = req.body.age
+//       // update.avatar = `${HOST}/upload/${req.file.filename}`
+//       let user = await  User.updateUserById(req.params.id, update)
+//       res.json({
+//         code: 0,
+//         user: user
+//       })
+//     }
+//   )
+/**
+ *
+ * 用户详情
+ * @api get /user/:loginName
+ * @apiDescription 通过loginName获取用户
+ *
+ */
 router.route('/:loginName')
   .get(async (req, res, next) => {
-    let user = await  User.getUserByLoginName(req.params.id)
+    console.log(req.params.loginName)
+    let user = await  User.getUserByLoginName(req.params.loginName)
     res.json({
       code: 0,
       user: user

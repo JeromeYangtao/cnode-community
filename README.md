@@ -68,10 +68,16 @@
      * 用户登陆
      * 验证 accessToken 的正确性
      *  post /accesstoken 
-     *
-     * 用户详情
-     * get /user/:name
-     * 
+    */
+
+    /**
+    *
+    * @api get /user/:loginName
+    * @apiDescription 通过loginName获取用户
+    *
+    */
+
+    /*
      * 获取已读和未读消息
      * get /messages 
     */

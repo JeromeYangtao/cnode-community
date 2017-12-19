@@ -38,7 +38,7 @@ async function createANewUser (params) {
       .then(r => r.toString())
       .catch(e => {
         console.log(e)
-        throw new Error('something goes wrong inside the server')
+        throw new Error('密码加密出错')
       })
   }
   let created = await user.save()
@@ -84,13 +84,14 @@ async function getUserById (userId) {
       throw Error(`error getting user by id: ${userId}`)
     })
 }
+
 // loginName获取单个用户
 async function getUserByLoginName (loginName) {
   return UserModel.findOne({loginName: loginName})
     .select(DEFAULT_PROJECTION)
     .catch(e => {
       console.log(e)
-      throw Error(`error getting user by id: ${loginName}`)
+      throw Error(`通过loginName获取用户: ${loginName}`)
     })
 }
 
