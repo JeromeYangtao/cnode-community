@@ -40,7 +40,7 @@ router.route('/')
 router.route('/:id')
 /**
  *
- * @api get /topic/:id 主题详情
+ * @api get /topics/:id 主题详情
  * @apiDescription 通过id获取topic
  *
  */

@@ -22,7 +22,7 @@ router.route('/')
   // 创建新用户
   .post(async (req, res, next) => {
     let user = await User.createANewUser({
-      name: req.body.name,
+      loginName: req.body.loginName,
       age: req.body.age,
       password: req.body.password,
       phoneNumber: req.body.phoneNumber
@@ -45,7 +45,7 @@ router.route('/:id')
   // 通过id修改用户
   .patch(auth(), upload.single('avatar'), async (req, res, next) => {
       let update = {}
-      if (req.body.name) update.name = req.body.name
+      if (req.body.loginName) update.loginName = req.body.loginName
       if (req.body.age) update.age = req.body.age
       update.avatar = `${HOST}/upload/${req.file.filename}`
       let user = await  User.updateUserById(req.params.id, update)
@@ -56,9 +56,9 @@ router.route('/:id')
     }
   )
 
-router.route('/:name')
+router.route('/:loginName')
   .get(async (req, res, next) => {
-    let user = await  User.getUserByName(req.params.id)
+    let user = await  User.getUserByLoginName(req.params.id)
     res.json({
       code: 0,
       user: user

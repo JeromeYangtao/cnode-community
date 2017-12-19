@@ -88,18 +88,15 @@
 
     /**
     *
-    * @api get /topic/:id 主题详情
+    * @api get /topics/:id 主题详情
     * @apiDescription 通过id获取topic
     *
     */
 
     /**
-     * 
-     * 主题详情
-     * get /topic/:id
      *
      * 新建主题
-     * post /topics 
+     * post /topics 新建主题
      *
      */
 ```

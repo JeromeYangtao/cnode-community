@@ -9,7 +9,7 @@ const logger = require('../../utils/logger').logger
 mongoose.Promise = global.Promise
 // 用户表单
 const UserSchema = new Schema({
-  name: {type: String, require: true, unique: true},
+  loginName: {type: String, require: true, unique: true},
   age: {type: Number, max: [90, 'nobody is older than 90 years old'], min: [1, 'nobody is younger than 1 years old']},
   phoneNumber: String,
   password: String,
@@ -17,8 +17,8 @@ const UserSchema = new Schema({
   openId: {type: String, index: true},
 })
 // 建立索引
-UserSchema.index({name: 1}, {unique: true})
-UserSchema.index({name: 1, age: 1})
+UserSchema.index({loginName: 1}, {unique: true})
+UserSchema.index({loginName: 1, age: 1})
 // 0表示不显示
 const DEFAULT_PROJECTION = {password: 0, phoneNumber: 0, __v: 0}
 // 用户模型
@@ -27,7 +27,7 @@ let UserModel = mongoose.model('user', UserSchema)
 // 创建新用户
 async function createANewUser (params) {
   const user = new UserModel({
-    name: params.name,
+    loginName: params.loginName,
     age: params.age,
     phoneNumber: params.phoneNumber,
     openId: params.openId
@@ -46,7 +46,7 @@ async function createANewUser (params) {
         logger.error('error creating user', e)
         switch (e.code) {
           case 11000:
-            throw new Errors.DuplicatedUserNameError(params.name)
+            throw new Errors.DuplicatedUserNameError(params.loginName)
             break
           default:
             throw new Errors.ValidationError('user', `error creating user ${ JSON.stringify(params) }`)
@@ -56,7 +56,7 @@ async function createANewUser (params) {
     )
   return {
     _id: created._id,
-    name: created.name,
+    loginName: created.loginName,
     age: created.age
   }
 }
@@ -84,13 +84,13 @@ async function getUserById (userId) {
       throw Error(`error getting user by id: ${userId}`)
     })
 }
-// name获取单个用户
-async function getUserById (name) {
-  return UserModel.findOne({name: name})
+// loginName获取单个用户
+async function getUserByLoginName (loginName) {
+  return UserModel.findOne({loginName: loginName})
     .select(DEFAULT_PROJECTION)
     .catch(e => {
       console.log(e)
-      throw Error(`error getting user by id: ${name}`)
+      throw Error(`error getting user by id: ${loginName}`)
     })
 }
 
@@ -127,7 +127,7 @@ async function loginWithWechat (user) {
   let found = await UserModel.findOne({openId: user.openid})
   if (found) return found
 
-  let created = await createANewUser({name: user.nickname, openId: user.openid})
+  let created = await createANewUser({loginName: user.nickname, openId: user.openid})
   return created
 }
 
@@ -146,6 +146,7 @@ module.exports = {
   getUsers,
   getUserById,
   updateUserById,
+  getUserByLoginName,
   login,
   loginWithWechat,
   incrPoints
