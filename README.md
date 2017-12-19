@@ -60,11 +60,14 @@
 ```
 ### 用到的接口
 ```js
+    以下 api 路径均以 http://yangtao.biz/api/v1 为前缀
+
     /**
-    * 以下 api 路径均以 http://yangtao.biz/api/v1 为前缀
+    *
+    * @api post /accesstoken
+    * @apiDescription accesstoken登录(loginName)
+    *
     */
-
-
 
     /**
     *

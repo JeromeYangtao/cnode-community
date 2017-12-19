@@ -4,11 +4,8 @@
     <list default="true" id="0b5ab5a6-f507-459a-af37-cbaabce15ae4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
       <change beforePath="$PROJECT_DIR$/models/mongo/user.js" afterPath="$PROJECT_DIR$/models/mongo/user.js" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change beforePath="$PROJECT_DIR$/routes/topic.js" afterPath="$PROJECT_DIR$/routes/topic.js" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,12 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="topic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/topic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="111">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
+                <element signature="e#263#457#0" expanded="false" />
+                <element signature="e#491#685#0" expanded="false" />
                 <element signature="e#739#991#0" expanded="false" />
                 <element signature="e#1122#1240#0" expanded="false" />
                 <element signature="e#1299#1563#0" expanded="false" />
@@ -60,12 +59,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="234">
-                <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <first_editor relative-caret-position="799">
+                <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -78,13 +77,14 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state relative-caret-position="168">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="3" />
               <folding>
                 <element signature="e#401#534#0" expanded="false" />
                 <element signature="e#598#737#0" expanded="false" />
-                <element signature="e#937#1077#0" expanded="false" />
-                <element signature="e#1912#2424#0" expanded="false" />
+                <element signature="e#884#1151#0" expanded="false" />
+                <element signature="e#1154#1294#0" expanded="false" />
+                <element signature="e#2129#2641#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -103,13 +103,12 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
               <folding>
                 <element signature="n#!!block;n#createANewUser#0" expanded="false" />
                 <element signature="n#!!block;n#getUsers#0" expanded="false" />
                 <element signature="n#!!block;n#updateUserById#0" expanded="false" />
-                <element signature="n#!!block;n#loginWithWechat#0" expanded="false" />
                 <element signature="n#!!block;n#incrPoints#0" expanded="false" />
               </folding>
             </state>
@@ -135,6 +134,7 @@
       <find>post</find>
       <find>name</find>
       <find>getUserByLoginName</find>
+      <find>DEFAULT_PROJECTION</find>
     </findStrings>
     <replaceStrings>
       <replace>topic</replace>
@@ -187,10 +187,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/mongo/topic.js" />
         <option value="$PROJECT_DIR$/routes/user.js" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/routes/topic.js" />
         <option value="$PROJECT_DIR$/models/mongo/user.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/routes/topic.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -391,7 +391,7 @@
       <workItem from="1513434106066" duration="500000" />
       <workItem from="1513435954117" duration="467000" />
       <workItem from="1513583349130" duration="11018000" />
-      <workItem from="1513663141999" duration="5159000" />
+      <workItem from="1513663141999" duration="6556000" />
     </task>
     <task id="LOCAL-00001" summary="generator生成express项目结构">
       <created>1501030411874</created>
@@ -533,11 +533,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513665759726</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="get topics 接口增加查询参数">
+      <created>1513668533920</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1513668533920</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131792000" />
+    <option name="totallyTimeSpent" value="133189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,11 +627,12 @@
     <MESSAGE value="完善get topic/:id接口" />
     <MESSAGE value="name字段改为loginName" />
     <MESSAGE value="通过id获取用户改为通过loginName获取用户" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过id获取用户改为通过loginName获取用户" />
+    <MESSAGE value="get topics 接口增加查询参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="get topics 接口增加查询参数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -686,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,6 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,39 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#createANewUser#0" expanded="false" />
-            <element signature="n#!!block;n#getUsers#0" expanded="false" />
-            <element signature="n#!!block;n#updateUserById#0" expanded="false" />
-            <element signature="n#!!block;n#loginWithWechat#0" expanded="false" />
-            <element signature="n#!!block;n#incrPoints#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/site/src/fetch/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -862,15 +839,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/routes/topic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        <state relative-caret-position="111">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="e#401#534#0" expanded="false" />
-            <element signature="e#598#737#0" expanded="false" />
-            <element signature="e#937#1077#0" expanded="false" />
-            <element signature="e#1912#2424#0" expanded="false" />
+            <element signature="e#263#457#0" expanded="false" />
+            <element signature="e#491#685#0" expanded="false" />
+            <element signature="e#739#991#0" expanded="false" />
+            <element signature="e#1122#1240#0" expanded="false" />
+            <element signature="e#1299#1563#0" expanded="false" />
+            <element signature="e#1635#1885#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,16 +866,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/topic.js">
+    <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="298">
+          <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
           <folding>
-            <element signature="e#739#991#0" expanded="false" />
-            <element signature="e#1122#1240#0" expanded="false" />
-            <element signature="e#1299#1563#0" expanded="false" />
-            <element signature="e#1635#1885#0" expanded="false" />
+            <element signature="n#!!block;n#createANewUser#0" expanded="false" />
+            <element signature="n#!!block;n#getUsers#0" expanded="false" />
+            <element signature="n#!!block;n#updateUserById#0" expanded="false" />
+            <element signature="n#!!block;n#incrPoints#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="3" />
+          <folding>
+            <element signature="e#401#534#0" expanded="false" />
+            <element signature="e#598#737#0" expanded="false" />
+            <element signature="e#884#1151#0" expanded="false" />
+            <element signature="e#1154#1294#0" expanded="false" />
+            <element signature="e#2129#2641#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="799">
+            <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>

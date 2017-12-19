@@ -106,7 +106,12 @@ async function updateUserById (userId, update) {
 }
 
 async function loginWithAccesstoken (accesstoken) {
-
+  let user = await UserModel.findOne({
+    loginName: accesstoken
+  })
+    .select(DEFAULT_PROJECTION)
+  if (!user) throw new Error('没找到用户')
+  return user
 }
 
 // 电话，密码登录

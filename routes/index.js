@@ -26,11 +26,19 @@ router.get('/management', function (req, res, next) {
 /**
  *
  * @api post /accesstoken
- * @apiDescription accesstoken登录
+ * @apiDescription accesstoken登录(loginName)
  *
  */
 router.post('/accesstoken', async (req, res, next) => {
-  let user = await  User.loginWithAccesstoken(req.params)
+  let user = await User.loginWithAccesstoken(req.query.accesstoken)
+  let token = JWT.sign({_id: user.id, iat: Date.now(), expire: Date.now() + 24 * 60 * 60 * 1000}, JWT_SECRET)
+  res.json({
+    code: 0,
+    data: {
+      user: user,
+      token: token
+    }
+  })
 })
 
 /**
