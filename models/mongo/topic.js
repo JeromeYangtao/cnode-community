@@ -4,8 +4,10 @@ const Schema = mongoose.Schema
 mongoose.Promise = global.Promise
 
 const TopicSchema = new Schema({
-  creator: {type: String, required: true},
+  creator: {type: String},
+  accesstoken: {type: String},
   title: {type: String, required: true},
+  tab: {type: String},
   content: {type: String},
   replyList: Array,
   likes: {type: Number, default: 0},
@@ -13,14 +15,17 @@ const TopicSchema = new Schema({
 const TopicModel = mongoose.model('topic', TopicSchema)
 
 async function createANewTopic (params) {
-  const topic = new TopicModel({creator: params.creator, title: params.title, content: params.content})
+  const topic = new TopicModel({
+    title: params.title,
+    tab: params.tab,
+    content: params.content
+  })
   return await topic.save()
     .catch(e => {
       console.log(e)
       throw new Error('error creating topic to db')
     })
 }
-
 
 async function getTopics (params = {page: 0, tab: 'all', limit: 10}) {
   if (params.tab === 'all') {

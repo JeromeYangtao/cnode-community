@@ -95,6 +95,17 @@ async function getUserByLoginName (loginName) {
     })
 }
 
+// accesstoken获取单个用户
+// a31c4a79-bf13-4115-9c51-6429996704b0
+async function getUserByAccesstoken (accesstoken) {
+  return UserModel.findOne({loginName: 'thomson2222'})
+    .select(DEFAULT_PROJECTION)
+    .catch(e => {
+      console.log(e)
+      throw Error(`通过${accesstoken}获取用户:`)
+    })
+}
+
 // 修改用户信息
 async function updateUserById (userId, update) {
   return await UserModel.findOneAndUpdate({_id: userId}, update, {new: true})
@@ -155,6 +166,7 @@ module.exports = {
   createANewUser,
   getUsers,
   getUserById,
+  getUserByAccesstoken,
   updateUserById,
   getUserByLoginName,
   login,

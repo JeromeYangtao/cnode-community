@@ -4,8 +4,9 @@
     <list default="true" id="0b5ab5a6-f507-459a-af37-cbaabce15ae4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/models/mongo/topic.js" afterPath="$PROJECT_DIR$/models/mongo/topic.js" />
       <change beforePath="$PROJECT_DIR$/models/mongo/user.js" afterPath="$PROJECT_DIR$/models/mongo/user.js" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change beforePath="$PROJECT_DIR$/routes/topic.js" afterPath="$PROJECT_DIR$/routes/topic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,15 +32,14 @@
       <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/topic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="241">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
               <folding>
-                <element signature="e#263#457#0" expanded="false" />
                 <element signature="e#491#685#0" expanded="false" />
-                <element signature="e#739#991#0" expanded="false" />
-                <element signature="e#1122#1240#0" expanded="false" />
-                <element signature="e#1299#1563#0" expanded="false" />
-                <element signature="e#1635#1885#0" expanded="false" />
+                <element signature="e#1272#1345#0" expanded="false" />
+                <element signature="e#1379#1497#0" expanded="false" />
+                <element signature="e#1556#1820#0" expanded="false" />
+                <element signature="e#1892#2142#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,11 +48,11 @@
       <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+            <state relative-caret-position="223">
+              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
-                <element signature="e#135#306#0" expanded="false" />
-                <element signature="n#!!block;n#createANewTopic#0" expanded="false" />
+                <element signature="n#!!block;n#getTopics#0" expanded="false" />
+                <element signature="n#!!block;n#getTopicById#0" expanded="false" />
                 <element signature="n#!!block;n#replyATopic#0" expanded="false" />
               </folding>
             </state>
@@ -63,8 +63,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="799">
-                <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+              <first_editor relative-caret-position="271">
+                <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -77,8 +77,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="3" />
+            <state relative-caret-position="285">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#401#534#0" expanded="false" />
                 <element signature="e#598#737#0" expanded="false" />
@@ -93,8 +93,8 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/src/fetch/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="219">
+              <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
+            <state relative-caret-position="259">
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#createANewUser#0" expanded="false" />
                 <element signature="n#!!block;n#getUsers#0" expanded="false" />
@@ -185,11 +185,11 @@
         <option value="$PROJECT_DIR$/views/management/src/main.js" />
         <option value="$PROJECT_DIR$/views/management/src/components/Index.vue" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/models/mongo/topic.js" />
         <option value="$PROJECT_DIR$/routes/user.js" />
-        <option value="$PROJECT_DIR$/routes/topic.js" />
-        <option value="$PROJECT_DIR$/models/mongo/user.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/models/mongo/topic.js" />
+        <option value="$PROJECT_DIR$/models/mongo/user.js" />
+        <option value="$PROJECT_DIR$/routes/topic.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -391,7 +391,7 @@
       <workItem from="1513434106066" duration="500000" />
       <workItem from="1513435954117" duration="467000" />
       <workItem from="1513583349130" duration="11018000" />
-      <workItem from="1513663141999" duration="6556000" />
+      <workItem from="1513663141999" duration="9959000" />
     </task>
     <task id="LOCAL-00001" summary="generator生成express项目结构">
       <created>1501030411874</created>
@@ -540,11 +540,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513668533920</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="accesstoken登录">
+      <created>1513670861575</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1513670861575</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133189000" />
+    <option name="totallyTimeSpent" value="136592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -628,7 +635,8 @@
     <MESSAGE value="name字段改为loginName" />
     <MESSAGE value="通过id获取用户改为通过loginName获取用户" />
     <MESSAGE value="get topics 接口增加查询参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="get topics 接口增加查询参数" />
+    <MESSAGE value="accesstoken登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="accesstoken登录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,6 +746,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,45 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/src/fetch/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/topic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#263#457#0" expanded="false" />
-            <element signature="e#491#685#0" expanded="false" />
-            <element signature="e#739#991#0" expanded="false" />
-            <element signature="e#1122#1240#0" expanded="false" />
-            <element signature="e#1299#1563#0" expanded="false" />
-            <element signature="e#1635#1885#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding>
-            <element signature="e#135#306#0" expanded="false" />
-            <element signature="n#!!block;n#createANewTopic#0" expanded="false" />
-            <element signature="n#!!block;n#replyATopic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/mongo/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="111" column="31" lean-forward="false" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
+        <state relative-caret-position="259">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#createANewUser#0" expanded="false" />
             <element signature="n#!!block;n#getUsers#0" expanded="false" />
@@ -879,16 +853,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/src/fetch/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="285">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#401#534#0" expanded="false" />
             <element signature="e#598#737#0" expanded="false" />
             <element signature="e#884#1151#0" expanded="false" />
             <element signature="e#1154#1294#0" expanded="false" />
             <element signature="e#2129#2641#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!block;n#getTopics#0" expanded="false" />
+            <element signature="n#!!block;n#getTopicById#0" expanded="false" />
+            <element signature="n#!!block;n#replyATopic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#491#685#0" expanded="false" />
+            <element signature="e#1272#1345#0" expanded="false" />
+            <element signature="e#1379#1497#0" expanded="false" />
+            <element signature="e#1556#1820#0" expanded="false" />
+            <element signature="e#1892#2142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -902,8 +910,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="799">
-            <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+          <first_editor relative-caret-position="271">
+            <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>

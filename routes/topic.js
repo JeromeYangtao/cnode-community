@@ -27,11 +27,21 @@ router.route('/')
       topics: topics
     })
   })
-  // 创建帖子
+  //
+  /**
+   *
+   * @api post /topics
+   * @apiDescription 创建帖子
+   * @apiParam {String} accessToken 用户的 accessToken
+   * @apiParam {String} title 标题
+   * @apiParam {String} tab 目前有 ask share job dev
+   * @apiParam {String} content 主体内容
+   *
+   */
   .post(auth(), async (req, res, next) => {
-    let user = await User.getUserById(req.body.userId)
+    let user = await User.getUserByAccesstoken(req.query.accesstoken)
     let topic = await Topic.createANewTopic({
-      creator: user,
+      tab: req.body.tab,
       title: req.body.title,
       content: req.body.content
     })
