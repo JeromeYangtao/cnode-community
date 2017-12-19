@@ -38,7 +38,12 @@ router.route('/')
   })
 
 router.route('/:id')
-// 根据id获取帖子
+/**
+ *
+ * @api get /topic/:id 主题详情
+ * @apiDescription 通过id获取topic
+ *
+ */
   .get(async (req, res, next) => {
     let topic = await  Topic.getTopicById(req.params.id)
     res.json({

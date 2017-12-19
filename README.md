@@ -61,7 +61,7 @@
 ### 用到的接口
 ```js
     /**
-    * 以下 api 路径均以 https://cnodejs.org/api/v1 为前缀
+    * 以下 api 路径均以 http://yangtao.biz/api/v1 为前缀
     */
 
     /**
@@ -75,13 +75,28 @@
      * 获取已读和未读消息
      * get /messages 
     */
-  
+
     /**
-     * 主题首页 
-     * get /topics 
+    *
+    * @api get /topics 主题首页
+    * @apiDescription 获取首页的topics列表
+    * @apiParam {Number=0} page 页数
+    * @apiParam {String=all} tab topics分类 目前有all
+    * @apiParam {Number=10} limit  每一页的topics数量
+    *
+    */
+
+    /**
+    *
+    * @api get /topic/:id 主题详情
+    * @apiDescription 通过id获取topic
+    *
+    */
+
+    /**
      * 
      * 主题详情
-     * get /topic/:id 
+     * get /topic/:id
      *
      * 新建主题
      * post /topics 
