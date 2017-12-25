@@ -2,7 +2,7 @@
 项目灵感的最初来源是[cnode社区](https://cnodejs.org/)提供了一套开放API，很多前端就试着用它复现一遍cnode社区。不过访问cnode的大部分都是冲着学Node.js的，在学了点基础知识之后，就想着做个大一点的项目试试。正好看到社区提供了一套比较规范的接口，就试着自己实现一遍
 
 ### 预览
-[预览，持续更新，还未完全成型](https://jeromeyangtao.github.io/cnode-community/views/site/dist/#/)
+[预览，移动端，建议切换Chrome的iPhone8模式下浏览。持续更新，还未完全成型。](https://jeromeyangtao.github.io/cnode-community/views/site/dist/#/)
 ### 技术栈
 ```
 后端: express + mongodb + redis + JWT登录 + 单元测试 + 内存 + 性能调优 + 分布式 
